@@ -1,6 +1,8 @@
 import React, {useEffect, useRef} from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios';
+import white from '../CodeEffects/codeeffects.white.css';
+import common from '../CodeEffects/codeeffects.common.css';
 
 function RuleEditor(props) {
     let ruleEditor = $rule.Context.getControl('divRuleEditor');

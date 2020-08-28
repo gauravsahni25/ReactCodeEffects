@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const APP_DIR = path.resolve(__dirname, 'ClientApp');
 
@@ -12,6 +13,10 @@ const config = {
     devtool: 'source-map',
     module: {
         rules: [
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
             {
                 test: /\.js?$/,
                 loader: 'babel-loader',
@@ -32,7 +37,9 @@ const config = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin({
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
         title: 'My App',
         template: path.resolve(__dirname, 'index.html')
       }),
