@@ -1,8 +1,8 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 const path = require('path');
 const APP_DIR = path.resolve(__dirname, 'ClientApp');
-const PUBLIC_DIR = path.resolve(__dirname, 'Public');
 
 const config = {
     entry: APP_DIR + '/Client.js',
@@ -32,12 +32,12 @@ const config = {
             }
         ]
     },
-    devServer:{
-        contentBase: PUBLIC_DIR,
-        port: 9000,
-        open: true,
-        historyApiFallback: true // do not return 404 for bad route
-    }
+    plugins: [new HtmlWebpackPlugin({
+        title: 'My App',
+        template: path.resolve(__dirname, 'index.html')
+      }),
+        new webpack.ProgressPlugin(),
+        new AddAssetHtmlPlugin({ filepath: path.resolve(__dirname, 'CodeEffects/CodeEffectsEditor.js')}) ]
 };
 
 module.exports = config;
