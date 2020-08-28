@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CodeEffects.Rule.Common;
 using CodeEffects.Rule.Core;
 using CodeEffects.Rule.Web;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +15,7 @@ using ReactEffects.Api.Services;
 
 namespace ReactEffects.Api.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class RuleController : ControllerBase
