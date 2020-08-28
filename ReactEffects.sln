@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactEffects", "ReactEffects\ReactEffects.csproj", "{0457B60D-BC21-4628-9529-639CC84174C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactEffects.Api", "ReactEffects.Api\ReactEffects.Api.csproj", "{3700FF73-36E0-44D8-BE6C-A671CA2B03BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0457B60D-BC21-4628-9529-639CC84174C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0457B60D-BC21-4628-9529-639CC84174C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0457B60D-BC21-4628-9529-639CC84174C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0457B60D-BC21-4628-9529-639CC84174C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3700FF73-36E0-44D8-BE6C-A671CA2B03BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3700FF73-36E0-44D8-BE6C-A671CA2B03BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3700FF73-36E0-44D8-BE6C-A671CA2B03BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3700FF73-36E0-44D8-BE6C-A671CA2B03BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

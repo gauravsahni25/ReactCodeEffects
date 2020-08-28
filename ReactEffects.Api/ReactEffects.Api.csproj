@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeEffects.Rule.Editor.Web.Core" Version="5.0.24.8" />
+    <PackageReference Include="CodeEffects.Rule.Engine.Standard.Trial" Version="5.0.9.8" />
+  </ItemGroup>
+
+
+</Project>
